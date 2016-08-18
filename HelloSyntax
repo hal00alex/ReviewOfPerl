@@ -1,0 +1,52 @@
+#always need this 
+#!/usr/bin/perl -w
+
+#syntax to print 
+print "Hello, world.\n"; 
+
+#syntax for varaible 
+$name = "Awesome"; 
+$age =  5; 
+$birthDate = 2001 - $age; 
+
+#Notes: 
+  #and is && 
+  #or is ||
+  
+#syntax for list (good for printing and for know or static values) 
+print qw(Jan, Feb, Mar); 
+
+#Notes:
+  #Perl can generate list with: (1 .. n) 
+
+#syntax for array (ggod for unknown or dynatimc values) 
+my @class; 
+@class = (Sean, Nico, Anne); 
+#adding
+@class = (@class, Nemo); 
+$third = (@class)[2]; 
+for $element (@array){
+  print $element, "\n"; 
+  } 
+  
+#Notes: 
+  #scalar means length: $scalar = @class will be equal to 3 
+  #can pop with: pop @array 
+  #can push with: push @array 
+  #shift and unshift exist 
+  
+#syntax for Hashes 
+%desks = (
+  "Haley" => "A2", 
+  "Oreo" => "A1", 
+  "Sneha" => "B2" 
+  ); 
+print "Haley's desk is at ", $desks{Haley}; 
+#adding
+$desks{Radha} = "B1"; 
+#deleting 
+delete $desks{Radha}; 
+
+#Notes: 
+  #can be easily switched/reverse with: reverse 
+  
